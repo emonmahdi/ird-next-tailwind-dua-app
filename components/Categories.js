@@ -1,5 +1,6 @@
 import React from "react";
 import SearchInput from "./ui/SearchInput";
+import SingleCategoryCard from "./SingleCategoryCard";
 
 const Categories = () => {
   return (
@@ -12,6 +13,13 @@ const Categories = () => {
           </h2>
           <div className="px-2">
             <SearchInput />
+            <div className="single-cards">
+              <SingleCategoryCard />
+              <SingleCategoryCard />
+              <SingleCategoryCard />
+              <SingleCategoryCard />
+              <SingleCategoryCard />
+            </div>
           </div>
         </div>
       </div>
