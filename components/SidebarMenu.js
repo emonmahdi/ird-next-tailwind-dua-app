@@ -13,7 +13,7 @@ const SidebarMenu = () => {
     <div className="w-[100px] bg-[#fff] h-[927px] rounded-lg">
       <ul>
         <li>
-          <Image src={logo} alt="logo image" />
+          <Image src={logo} alt="logo image" className="cursor-pointer" />
         </li>
         <li className="mt-[60px] cursor-pointer">
           <Image src={home} alt="home image" className="mx-auto" />
@@ -33,7 +33,7 @@ const SidebarMenu = () => {
         <li className="mt-3 cursor-pointer">
           <Image src={duaqna} alt="duaqna" className="mx-auto" />
         </li>
-        <li className="mt-[50px]">
+        <li className="mt-[50px] cursor-pointer">
           <Image src={bottomLogo} alt="bottomLogo" />
         </li>
       </ul>
