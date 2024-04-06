@@ -6,7 +6,7 @@ const Categories = () => {
   return (
     <>
       <div className="w-[429px]">
-        <h2 className="font-bold mb-3">Dua Page</h2>
+        <h2 className="font-bold mb-8">Dua Page</h2>
         <div className="bg-white h-[837px] rounded-lg">
           <h2 className="text-center text-white py-2 bg-[#1EA55E] rounded-t-lg">
             Category

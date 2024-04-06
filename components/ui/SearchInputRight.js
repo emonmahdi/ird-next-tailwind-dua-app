@@ -2,9 +2,9 @@ import React from "react";
 
 const SearchInputRight = () => {
   return (
-    <form className="my-4">
+    <form className="mb-4">
       <div className="relative text-gray-600 focus-within:text-gray-400">
-        <span className="absolute inset-y-0 bg-gray-300 rounded-lg right-0 flex items-center pl-2">
+        <span className="absolute inset-y-0 bg-[#F3F4F6] rounded-lg right-0 flex items-center pl-2">
           <button
             type="submit"
             className="p-1 focus:outline-none focus:shadow-outline"
@@ -25,8 +25,8 @@ const SearchInputRight = () => {
         <input
           type="search"
           name="q"
-          className="w-[371px] border-2 py-2 text-sm text-black  rounded-md focus:outline-none focus:bg-white pl-3"
-          placeholder="Search by category"
+          className="w-[371px] py-2 text-sm text-black  rounded-md focus:outline-none focus:bg-white pl-3"
+          placeholder="Search by Dua Name"
           autocomplete="off"
         />
       </div>
