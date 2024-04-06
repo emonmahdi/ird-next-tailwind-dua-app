@@ -10,7 +10,7 @@ import bottomLogo from "@/assets/bottom-logo.png";
 
 const SidebarMenu = () => {
   return (
-    <div className="w-[100px] bg-[#fff] h-[927px] rounded-lg">
+    <div className="w-[100px] bg-[#fff] h-screen rounded-lg">
       <ul>
         <li>
           <Image src={logo} alt="logo image" className="cursor-pointer" />
