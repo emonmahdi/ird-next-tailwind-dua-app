@@ -2,7 +2,7 @@ import React from "react";
 import cardImg from "@/assets/card-img.png";
 import Image from "next/image";
 
-const SingleCategoryCard = () => {
+const SingleCategoryCard = ({ category }) => {
   return (
     <>
       <div className="flex justify-between items-center bg-gray-300 rounded-lg p-2 mb-2">
@@ -12,7 +12,7 @@ const SingleCategoryCard = () => {
           </div>
           <div>
             <h6 className="text-[#1FA45B] text-[12px] font-bold">
-              Introduction to Dua
+              {category?.cat_name_en} - {category?.cat_name_bn}
             </h6>
             <p className="text-[11px]">Subcategory: 11</p>
           </div>
@@ -45,6 +45,13 @@ const SingleCategoryCard = () => {
               className="absolute inset-y-0 left-0 top-2 w-2 h-2 rounded-full bg-[#1EA55E]"
             ></span>
             This is item Three
+          </li>
+          <li className="relative">
+            <span
+              style={{ left: "-13px" }}
+              className="absolute inset-y-0 left-0 top-2 w-2 h-2 rounded-full bg-[#1EA55E]"
+            ></span>
+            This is item Four
           </li>
         </ul>
       </div>

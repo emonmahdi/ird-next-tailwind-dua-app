@@ -7,6 +7,7 @@ import detailsImg from "@/assets/details.png";
 import valpImg from "@/assets/valp.png";
 import shareImg from "@/assets/share.png";
 import warningImg from "@/assets/warning.png";
+import playImg from "@/assets/play.png";
 
 const DynamicContent = () => {
   return (
@@ -40,32 +41,41 @@ const DynamicContent = () => {
               <h3 className="text-[#1FA45B]">Reference: </h3>
               <p>Surah Al-Fatir 35:15</p>
             </div>
-            <div className="shared-options flex justify-end items-center gap-8 mt-4">
-              <Image
-                src={copyImg}
-                className="cursor-pointer"
-                alt="share icon image"
-              />
-              <Image
-                src={detailsImg}
-                className="cursor-pointer"
-                alt="share icon image"
-              />
-              <Image
-                src={valpImg}
-                className="cursor-pointer"
-                alt="share icon image"
-              />
-              <Image
-                src={shareImg}
-                className="cursor-pointer"
-                alt="share icon image"
-              />
-              <Image
-                src={warningImg}
-                className="cursor-pointer"
-                alt="share icon image"
-              />
+            <div className="shared-options flex justify-between items-center mt-4">
+              <div>
+                <Image
+                  src={playImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+              </div>
+              <div className="flex gap-8">
+                <Image
+                  src={copyImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+                <Image
+                  src={detailsImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+                <Image
+                  src={valpImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+                <Image
+                  src={shareImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+                <Image
+                  src={warningImg}
+                  className="cursor-pointer"
+                  alt="share icon image"
+                />
+              </div>
             </div>
           </div>
         </div>
