@@ -5,9 +5,15 @@ import Image from "next/image";
 const SingleCategoryCard = async ({ category }) => {
   const res = await fetch("http://localhost:5000/subcategories");
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
 
   const catId = category?.cat_id;
+
+  // const [visibleItems, setVisibleItems] = useState(false);
+
+  // const handleToggle = () => {
+  //   setVisibleItems(!visibleItems);
+  // };
 
   return (
     <>
@@ -20,7 +26,9 @@ const SingleCategoryCard = async ({ category }) => {
             <h6 className="text-[#1FA45B] text-[12px] font-bold">
               {category?.cat_name_en} - {category?.cat_name_bn}
             </h6>
-            <p className="text-[11px]">Subcategory: {data?.length}</p>
+            <p className="text-[11px]">
+              Subcategory: {data.filter((sub) => sub?.cat_id === catId).length}
+            </p>
           </div>
         </div>
         <div>

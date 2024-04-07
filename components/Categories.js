@@ -4,13 +4,13 @@ import SingleCategoryCard from "./SingleCategoryCard";
 const Categories = async () => {
   const res = await fetch("http://localhost:5000/categories");
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
       <div className="w-[429px]">
         <h2 className="font-bold mb-8">Dua Page</h2>
-        <div className="bg-white h-auto rounded-lg">
+        <div className="bg-white h-[550px] overflow-auto rounded-lg">
           <h2 className="text-center text-white py-2 bg-[#1EA55E] rounded-t-lg">
             Category Page Data
           </h2>
